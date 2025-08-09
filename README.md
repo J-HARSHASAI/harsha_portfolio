@@ -2,7 +2,7 @@
 
 # 🌐 Harsha Vardhan Jonnalagadda – Full-Stack Developer & AI/ML Enthusiast
 
-![Portfolio](https://harshavardhanj.netlify.app/#home)  
+![Portfolio]([https://harshavardhanj.netlify.app/#home](https://harshavardhanj.netlify.app/))  
 [![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://app.netlify.com/sites/harshavardhanj/deploys)
 [![GitHub followers](https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=Follow&style=social)](https://github.com/YOUR_GITHUB_USERNAME)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/harsha-vardhan-jonnalagadda/)
