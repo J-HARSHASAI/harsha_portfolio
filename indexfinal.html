@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Vardhan Jonnalagadda | Full-Stack Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Added Orbitron font for the name -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles that complement Tailwind */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A0A;
+            /* Applying the background pattern */
+            background-image: radial-gradient(rgba(0, 255, 136, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        /* Added class for Orbitron font */
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .text-accent {
+            color: #00FF88;
+        }
+        .bg-accent {
+            background-color: #00FF88;
+        }
+        .bg-accent-dark {
+            background-color: #00e67a;
+        }
+        .border-accent {
+            border-color: #00FF88;
+        }
+        .hero-image-border {
+            border: 3px solid #EAEAEA;
+            position: relative;
+            left:8%;
+        }
+        .hero-image-border::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 110%;
+            height: 110%;
+            border: 2px solid #00FF88;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header Section -->
+    <header class="bg-black/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold" style="font-family: 'Orbitron', sans-serif;">
+            Harsha<span class="text-accent">.</span></a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="hover:text-accent transition">Home</a>
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#certificates" class="hover:text-accent transition">Certificates</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://www.linkedin.com/in/harsha-vardhan-jonnalagadda-286bb8312" target="_blank" class="text-gray-400 hover:text-accent transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/J-HARSHASAI" target="_blank" class="text-gray-400 hover:text-accent transition text-xl"><i class="fa-brands fa-github"></i></a>
+                <a href="resume.pdf" download class="bg-accent hover:bg-accent-dark text-black font-bold py-2 px-4 rounded-lg flex items-center space-x-2 transition">
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="nav-toggle" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="nav-links" class="hidden md:hidden absolute top-20 left-0 w-full bg-[#0A0A0A] flex-col items-center space-y-4 py-8">
+            <a href="#home" class="hover:text-accent transition">Home</a>
+            <a href="#about" class="hover:text-accent transition">About</a>
+            <a href="#skills" class="hover:text-accent transition">Skills</a>
+            <a href="#projects" class="hover:text-accent transition">Projects</a>
+            <a href="#certificates" class="hover:text-accent transition">Certificates</a>
+            <a href="#experience" class="hover:text-accent transition">Experience</a>
+            <a href="#contact" class="hover:text-accent transition">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+                <!-- Left Content -->
+                <div class="text-center md:text-left">
+                    <p class="text-lg">Hi, I'm</p>
+                    <!-- Applied the new font style and structure to your name -->
+                    <h1 class="font-orbitron text-5xl md:text-6xl font-black leading-tight mt-2 tracking-wider">
+                        HARSHA<br>
+                        VARDHAN<br>
+                        <span class="text-accent">JONNALAGADDA</span>
+                    </h1>
+                    <h2 class="text-2xl text-gray-400 mt-4"> Full-Stack Developer</h2>
+                    <p class="text-gray-400 mt-4 max-w-lg mx-auto md:mx-0">
+                        Currently in my 3rd year B.Tech in Artificial
+                        Intelligence & Machine Learning, passionate about turning ideas 
+                        into reality through technology — from building efficient software
+                         solutions to exploring AI, machine learning, and full-stack development
+                    </p>
+                    
+                    <!-- Buttons and Social Icons -->
+                    <div class="mt-8 flex items-center justify-center md:justify-start space-x-6">
+                        <a href="#projects" class="bg-accent hover:bg-accent-dark text-black font-bold py-3 px-6 rounded-lg transition">View Projects</a>
+                        
+                        <div class="flex items-center space-x-4">
+                           <a href="https://www.linkedin.com/in/harsha-vardhan-jonnalagadda-286bb8312" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out">
+                               <i class="fab fa-linkedin text-3xl p-2 rounded-full border-2 border-gray-600 hover:border-blue-500"></i>
+                           </a>
+                           <a href="https://github.com/J-HARSHASAI" target="_blank" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">
+                               <i class="fab fa-github text-3xl p-2 rounded-full border-2 border-gray-600 hover:border-white"></i>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex justify-center mt-18 md:mt-0">
+                    <div class="w-78 h-72 md:w-96 md:h-96 rounded-full p-4 hero-image-border ml-16 md:ml-32">
+                        <img src="port pic.png" alt="Harsha Vardhan Jonnalagadda" class="w-full h-full object-cover rounded-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 border-t border-gray-800 bg-black/20">
+            <div class="container mx-auto px-4">
+                <!-- Main About Me Intro -->
+                <div class="grid md:grid-cols-3 gap-12 items-center mb-20">
+                    <div class="md:col-span-1 flex justify-center">
+                        <img src="WhatsApp Image 2025-07-20 at 23.19.46_f0c7b14b.jpg" alt="About Harsha" class="w-full max-w-xs object-cover rounded-lg shadow-2xl">
+                    </div>
+                    <div class="md:col-span-2">
+                        <h2 class="text-4xl font-bold mb-2">About <span class="text-accent">Me</span></h2>
+                        <div class="w-24 h-1 bg-accent mb-6"></div>
+                        <p class="text-gray-300 mb-4">I'm a passionate AI & ML Engineer and Full Stack Developer with deep expertise in creating intelligent solutions that solve real-world problems. My journey in technology is driven by curiosity, innovation, and a strong desire to stay at the forefront of emerging technologies.
+                             I'm especially enthusiastic about exploring various AI tools, experimenting with them hands-on, and leveraging their capabilities to gain practical experience. This continuous learning approach helps me design smarter, more efficient, and impactful solutions that push the boundaries of what's possible.</p>
+                        <p class="text-gray-400 mb-6">I'm also a proud member of ACM (Association for Computing Machinery), which keeps me connected with the latest developments in computing and technology. My expertise spans from Deep Learning and DSA problem-solving using Python to Full Stack Development.</p>
+                        <div class="grid grid-cols-2 gap-4 text-sm text-gray-300">
+                            <div class="flex items-center"><i class="fas fa-calendar-alt text-accent mr-3"></i><span>Born: JULY 17, 2004</span></div>
+                            <div class="flex items-center"><i class="fas fa-map-marker-alt text-accent mr-3"></i><span>Martur, India</span></div>
+                            <div class="flex items-center"><i class="fas fa-graduation-cap text-accent mr-3"></i><span>Graduating: 2027</span></div>
+                            <div class="flex items-center"><i class="fas fa-briefcase text-accent mr-3"></i><span>Job Seeking</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="bg-gray-900/50 p-8 rounded-lg border border-gray-800 shadow-xl mb-20">
+                    <h3 class="text-3xl font-bold text-center mb-8">Professional <span class="text-accent">Summary</span></h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold text-accent mb-4">Expertise</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li class="flex items-start"><i class="fas fa-check-circle text-accent mt-1 mr-3"></i><span>AI & Machine Learning Engineering</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-accent mt-1 mr-3"></i><span>BE10X AI Tools Certified Specialist</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-accent mt-1 mr-3"></i><span>Full Stack Development</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-accent mt-1 mr-3"></i><span>Deep Learning (TensorFlow/PyTorch)</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-accent mt-1 mr-3"></i><span>Professional Prompt Engineering</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-accent mt-1 mr-3"></i><span>DSA Problem Solving with Python</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-accent mt-1 mr-3"></i><span>Data Analytics & Visualization</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-accent mb-4">Goals</h4>
+                            <ul class="space-y-2 text-gray-400">
+                                <li class="flex items-start"><i class="fas fa-bullseye text-accent mt-1 mr-3"></i><span>Secure internships/jobs at top MNCs</span></li>
+                                <li class="flex items-start"><i class="fas fa-bullseye text-accent mt-1 mr-3"></i><span>Apply cutting-edge ML techniques</span></li>
+                                <li class="flex items-start"><i class="fas fa-bullseye text-accent mt-1 mr-3"></i><span>Develop scalable AI solutions</span></li>
+                                <li class="flex items-start"><i class="fas fa-bullseye text-accent mt-1 mr-3"></i><span>Collaborate with forward-thinking teams</span></li>
+                                <li class="flex items-start"><i class="fas fa-bullseye text-accent mt-1 mr-3"></i><span>Drive business value through AI</span></li>
+                                <li class="flex items-start"><i class="fas fa-bullseye text-accent mt-1 mr-3"></i><span>Continuous learning and growth</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education & Memberships -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6">Education</h3>
+                        <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xl font-semibold text-accent">Bachelor of Technology</h4>
+                                <span class="text-accent font-bold">2027</span>
+                            </div>
+                            <p class="text-gray-300 mt-1">Vasireddy Venkatadri Institute Of Technology [VVIT]</p>
+                            <p class="text-gray-400 text-sm mb-4">Computer Science with Specialization in Artificial Intelligence and Machine Learning</p>
+                            <ul class="space-y-2 text-sm text-gray-400 list-disc list-inside">
+                                <li>Focused on AI/ML fundamentals and applications</li>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Deep Learning & Neural Networks</li>
+                                <li>Software Engineering principles</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-3xl font-bold mb-6">Professional <span class="text-accent">Memberships</span></h3>
+                        <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg flex items-center">
+                            <i class="fas fa-user-tie text-accent text-4xl mr-4"></i>
+                            <div>
+                                <h4 class="text-xl font-semibold">ACM Member</h4>
+                                <p class="text-gray-400 text-sm">Proud member of ACM (Association for Computing Machinery), staying connected with the latest developments in computing and technology research.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 border-t border-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Skills & <span class="text-accent">Expertise</span></h2>
+                    <p class="text-gray-400 mt-2">Technical proficiency and professional capabilities</p>
+                    <div class="w-24 h-1 bg-accent mt-4 mx-auto"></div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="bg-gray-900/50 p-8 rounded-lg border border-gray-800 shadow-xl mb-16">
+                    <h3 class="text-2xl font-bold text-accent mb-6 flex items-center"><i class="fas fa-code mr-3"></i>Technical Skills</h3>
+                    <div class="grid md:grid-cols-2 gap-x-12 gap-y-6">
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Python</span>
+                                <span class="text-sm font-medium text-gray-300">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Machine Learning</span>
+                                <span class="text-sm font-medium text-gray-300">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-red-500 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Deep Learning (TensorFlow/PyTorch)</span>
+                                <span class="text-sm font-medium text-gray-300">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-orange-500 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Data Structures & Algorithms</span>
+                                <span class="text-sm font-medium text-gray-300">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Data Analysis (Pandas, NumPy)</span>
+                                <span class="text-sm font-medium text-gray-300">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-sky-500 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Full Stack Development</span>
+                                <span class="text-sm font-medium text-gray-300">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-teal-500 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                         <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">AI Tools Specialist</span>
+                                <span class="text-sm font-medium text-gray-300">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-green-500 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                         <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">SQL</span>
+                                <span class="text-sm font-medium text-gray-300">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-indigo-500 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Cloud Platforms (AWS/Azure/GCP)</span>
+                                <span class="text-sm font-medium text-gray-300">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Java</span>
+                                <span class="text-sm font-medium text-gray-300">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-amber-500 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">C Programming</span>
+                                <span class="text-sm font-medium text-gray-300">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-violet-500 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Natural Language Processing</span>
+                                <span class="text-sm font-medium text-gray-300">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-lime-500 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                         <!-- Skill Item -->
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-gray-300">Google Cloud Platform</span>
+                                <span class="text-sm font-medium text-gray-300">65%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                <div class="bg-pink-500 h-2.5 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                 <div class="bg-gray-900/50 p-8 rounded-lg border border-gray-800 shadow-xl">
+                    <h3 class="text-2xl font-bold text-accent mb-6 flex items-center"><i class="fas fa-user-gear mr-3"></i>Professional Skills</h3>
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                        <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-comments text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Communication</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-users text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Teamwork</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-lightbulb text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Problem-Solving</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-clock text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Time Management</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-arrows-spin text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Adaptability</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-brain text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Critical Thinking</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-user-tie text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Leadership</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-heart-pulse text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Emotional Intelligence</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-palette text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Creativity</h4>
+                        </div>
+                         <!-- Skill Card -->
+                        <div class="bg-gray-800/50 p-6 rounded-lg hover:bg-gray-700/50 transition-colors duration-300 text-center flex flex-col items-center justify-center">
+                            <i class="fas fa-handshake-angle text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold text-lg">Work Ethic</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 border-t border-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold">My <span class="text-accent">Projects</span></h2>
+                    <p class="text-gray-400 mt-2">A selection of my recent work</p>
+                    <div class="w-24 h-1 bg-accent mt-4 mx-auto"></div>
+                </div>
+
+                <div class="grid lg:grid-cols-1 gap-16">
+                    <!-- Project Card 1: EDUCAREER -->
+                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 shadow-lg overflow-hidden">
+                        <div class="grid md:grid-cols-2 items-center">
+                            <div class="p-8">
+                                <h3 class="text-3xl font-bold text-accent">EDUCAREER</h3>
+                                <p class="text-gray-400 mt-4">An educational portal helping students in choosing their dream career. This sophisticated platform provides comprehensive guidance and resources to empower students in their professional journey.</p>
+                                <div class="mt-6">
+                                    <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
+                                    <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                        <li>Personalized career path recommendations</li>
+                                        <li>Resource library with articles and videos</li>
+                                        <li>To guide students in exploring job roles and mapping them to required skills for better career planning.</li>
+                                    </ul>
+                                </div>
+                                <div class="mt-6">
+                                    <h4 class="text-xl font-semibold mb-2">Technologies:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">HTML</span>
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">CSS</span>
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">JavaScript</span>
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">React</span>
+                                    </div>
+                                </div>
+                                <div class="mt-8 flex space-x-4">
+                                    <a href="https://github.com/J-HARSHASAI/EduCareer-fin" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition">
+                                        <i class="fab fa-github"></i>
+                                        <span>View Code</span>
+                                    </a>
+                                    <a href="https://educareer6148.netlify.app/" target="_blank" class="bg-accent hover:bg-accent-dark text-black font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center p-8 bg-gray-800/20 h-full">
+                                <img src="educar.jpg?text=EDUCAREER" alt="EDUCAREER Project" class="rounded-lg shadow-2xl object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Flappy Bird Game -->
+                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 shadow-lg overflow-hidden">
+                        <div class="grid md:grid-cols-2 items-center">
+                             <div class="p-8">
+                                <h3 class="text-3xl font-bold text-accent">Flappy Bird Game</h3>
+                                <p class="text-gray-400 mt-4">A simple Flappy Bird clone implemented in Python using the Pygame library. The game includes realistic physics, sound effects, and a high-score tracking system.</p>
+                                 <div class="mt-6">
+                                    <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
+                                    <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                        <li>Classic Flappy Bird gameplay mechanics</li>
+                                        <li>Gravity and jumping mechanics</li>
+                                        <li>Sound effects for flapping, scoring, and collisions</li>
+                                        <li>High score tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="mt-6">
+                                    <h4 class="text-xl font-semibold mb-2">Technologies:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Python</span>
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Pygame</span>
+                                    </div>
+                                </div>
+                                <div class="mt-8 flex space-x-4">
+                                    <a href="https://github.com/J-HARSHASAI/flappy-bird" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition">
+                                        <i class="fab fa-github"></i>
+                                        <span>View Code</span>
+                                    </a>
+                                    <a href="https://flappybirdbyharsha.netlify.app/" target="_blank" class="bg-accent hover:bg-accent-dark text-black font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center p-8 bg-gray-800/20 h-full">
+                                 <img src="flappybird.jpg" alt="Flappy Bird Game Project" class="rounded-lg shadow-2xl object-cover">
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Project Card 3: Intelligent Chatbot -->
+                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 shadow-lg overflow-hidden">
+                        <div class="grid md:grid-cols-2 items-center">
+                            <div class="p-8">
+                                <h3 class="text-3xl font-bold text-accent">Intelligent Chatbot</h3>
+                                <p class="text-gray-400 mt-4">A sophisticated conversational AI chatbot built using natural language processing and machine learning. The chatbot can understand user queries, provide intelligent responses, and learn from interactions to improve over time.</p>
+                                <div class="mt-6">
+                                    <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
+                                    <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                        <li>Natural language understanding</li>
+                                        <li>Context-aware responses</li>
+                                        <li>Learning from conversations</li>
+                                        <li>Multi-turn dialogue support</li>
+                                    </ul>
+                                </div>
+                                <div class="mt-6">
+                                    <h4 class="text-xl font-semibold mb-2">Technologies:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Python</span>
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">NLP</span>
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">Machine Learning</span>
+                                        <span class="bg-gray-700 text-sm font-semibold px-3 py-1 rounded-full">TensorFlow</span>
+                                    </div>
+                                </div>
+                                <div class="mt-8 flex space-x-4">
+                                    <a href="#" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition">
+                                        <i class="fab fa-github"></i>
+                                        <span>View Code</span>
+                                    </a>
+                                    <a href="#" target="_blank" class="bg-accent hover:bg-accent-dark text-black font-bold py-3 px-6 rounded-lg flex items-center space-x-2 transition">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center p-8 bg-gray-800/20 h-full">
+                                <img src="https://placehold.co/600x400/1a1a1a/00FF88?text=Chatbot" alt="Intelligent Chatbot Project" class="rounded-lg shadow-2xl object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certificates Section -->
+        <section id="certificates" class="py-24 border-t border-gray-800 bg-black/20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Certifications & <span class="text-accent">Achievements</span></h2>
+                    <p class="text-gray-400 mt-2">Professional certifications and achievements</p>
+                    <div class="w-24 h-1 bg-accent mt-4 mx-auto"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <!-- Certificate Card 1 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg text-center">
+                        <img src="certificate1.jpg" alt="Responsive Web Design Certificate" class="mx-auto mb-4 rounded">
+                        <h3 class="text-xl font-bold text-accent">Responsive Web Design</h3>
+                        <p class="text-gray-400 mt-2">Certified by freeCodeCamp, mastering HTML, CSS, Flexbox, and accessibility through 300+ hours of projects.</p>
+                    </div>
+                    <!-- Certificate Card 2 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg text-center">
+                        <img src="certificate2.jpg" alt="Google Cloud Certificate" class="mx-auto mb-4 rounded">
+                        <h3 class="text-xl font-bold text-accent">Google Cloud Generative AI</h3>
+                        <p class="text-gray-400 mt-2">Completed a 45-hour course on Generative AI, earning 24 skill badges on Google Cloud's AI tools.</p>
+                    </div>
+                    <!-- Certificate Card 3 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg text-center">
+                        <img src="certificate3.jpg" alt="Data Analytics Certificate" class="mx-auto mb-4 rounded">
+                        <h3 class="text-xl font-bold text-accent">Data Analytics & Visualization</h3>
+                        <p class="text-gray-400 mt-2">Completed Accenture simulation covering data cleaning, visualization, and insight presentation for AI-driven decisions.</p>
+                    </div>
+                    <!-- Certificate Card 4 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg text-center">
+                        <img src="certificate4.jpg" alt="AWS Certificate" class="mx-auto mb-4 rounded">
+                        <h3 class="text-xl font-bold text-accent">AWS Solutions Architecture</h3>
+                        <p class="text-gray-400 mt-2">Completed Forage simulation on designing scalable hosting architectures using foundational AWS principles.</p>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                 <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-center mb-8"> <span class="text-accent">Achievements</span></h3>
+                    <!-- Achievement Item 2 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg flex items-center">
+                        <i class="fas fa-medal text-accent text-3xl mr-6"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">Project Showcase Recognition - EDUCAREER</h4>
+                            <p class="text-gray-400">Recognized for developing an innovative web platform for career guidance that impacted 500+ students, highlighting practical development skills and user-focused thinking.</p>
+                        </div>
+                    </div>
+                    <!-- Achievement Item 3 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg flex items-center">
+                        <i class="fas fa-lightbulb text-accent text-3xl mr-6"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">Workshop Participation - Sustainable Product Design at Anurag University National Student Forum 2.0</h4>
+                            <p class="text-gray-400">Gained expertise in sustainable design, teamwork, problem-solving, and industry trends at Anurag University National Student Forum 2.0, June 18-20, 2024.</p>
+                        </div>
+                    </div>
+                    <!-- Achievement Item 1 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg flex items-center">
+                        <i class="fas fa-robot text-accent text-3xl mr-6"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">SKILL EDGE (ACM event) - 1st Place</h4>
+                            <p class="text-gray-400">Achieved first place in event which Tested Aptitude,Coding, logical thinking,communication and teamwork.</p>
+                        </div>
+                    </div>
+                    <!-- Achievement Item 4 -->
+                    <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-800 shadow-lg flex items-center">
+                        <i class="fas fa-star text-accent text-3xl mr-6"></i>
+                        <div>
+                            <h4 class="text-xl font-semibold">Academic Excellence (Top 10%)</h4>
+                            <p class="text-gray-400">Consistently maintained a CGPA of 8.65/10, reflecting strong academic performance and commitment to excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-24 border-t border-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Career <span class="text-accent">Objective</span></h2>
+                    <p class="text-gray-400 mt-4 max-w-3xl mx-auto">Currently seeking opportunities to apply my AI and Machine Learning expertise in a professional environment. I'm passionate about contributing to innovative projects and working with teams that are pushing the boundaries of artificial intelligence.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Objective Card 1 -->
+                    <div class="bg-gray-900/50 p-8 rounded-lg border border-gray-800 shadow-lg">
+                        <i class="fas fa-award text-accent text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Professional Growth</h3>
+                        <p class="text-gray-400">Seeking challenging roles to expand expertise</p>
+                    </div>
+                    <!-- Objective Card 2 -->
+                    <div class="bg-gray-900/50 p-8 rounded-lg border border-gray-800 shadow-lg">
+                        <i class="fas fa-users-cog text-accent text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Team Collaboration</h3>
+                        <p class="text-gray-400">Contributing to innovative AI/ML projects</p>
+                    </div>
+                    <!-- Objective Card 3 -->
+                    <div class="bg-gray-900/50 p-8 rounded-lg border border-gray-800 shadow-lg">
+                        <i class="fas fa-calendar-check text-accent text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Long-term Vision</h3>
+                        <p class="text-gray-400">Building expertise until graduation in 2027</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 border-t border-gray-800 bg-black/20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold">Contact <span class="text-accent">Information</span></h2>
+                    <div class="w-24 h-1 bg-accent mt-4 mx-auto"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-16">
+                    <!-- Left: Contact Details -->
+                    <div>
+                        <div class="space-y-6">
+                            <!-- Email -->
+                            <div class="flex items-center">
+                                <div class="bg-gray-800 p-3 rounded-full mr-4"><i class="fas fa-envelope text-accent text-xl"></i></div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <a href="mailto:jv.harshasai@gmail.com" class="text-gray-400 hover:text-accent">jv.harshasai@gmail.com</a>
+                                </div>
+                            </div>
+                            <!-- Phone -->
+                            <div class="flex items-center">
+                                <div class="bg-gray-800 p-3 rounded-full mr-4"><i class="fas fa-phone text-accent text-xl"></i></div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-gray-400">+91 9177818027</p>
+                                </div>
+                            </div>
+                            <!-- Location -->
+                            <div class="flex items-center">
+                                <div class="bg-gray-800 p-3 rounded-full mr-4"><i class="fas fa-map-marker-alt text-accent text-xl"></i></div>
+                                <div>
+                                    <h4 class="font-semibold">Location</h4>
+                                    <p class="text-gray-400">Martur, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mt-12 mb-4">Connect on <span class="text-accent">Social Media</span></h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/J-HARSHASAI" target="_blank" class="bg-gray-800 text-2xl p-3 rounded-full hover:text-accent transition"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/harsha-vardhan-jonnalagadda-286bb8312" target="_blank" class="bg-gray-800 text-2xl p-3 rounded-full hover:text-accent transition"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/j_harsha.sai/profilecard/?igsh=MTY3eDJpamQwbmp3eg==" target="_blank" class="bg-gray-800 text-2xl p-3 rounded-full hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- Right: Contact Form -->
+                    <div class="bg-gray-900/50 p-8 rounded-lg border border-gray-800 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send a <span class="text-accent">Message</span></h3>
+                        <form id="contact-form" action="https://formspree.io/f/mdkdpjow" method="POST">
+                            <div class="mb-4">
+                                <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+                                <input type="text" id="name" name="name" class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block mb-2 text-sm font-medium">Email Address</label>
+                                <input type="email" id="email" name="email" class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5" placeholder="Enter your email" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                                <textarea id="message" name="message" rows="4" class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg focus:ring-accent focus:border-accent block w-full p-2.5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent hover:bg-accent-dark text-black font-bold py-3 px-6 rounded-lg transition">Send Message</button>
+                            <p id="form-status" class="mt-4 text-center"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="border-t border-gray-800 bg-black/50">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-400">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/J-HARSHASAI" target="_blank" class="text-2xl hover:text-accent transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/harsha-vardhan-jonnalagadda-286bb8312" target="_blank" class="text-2xl hover:text-accent transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/j_harsha.sai/profilecard/?igsh=MTY3eDJpamQwbmp3eg==" target="_blank" class="text-2xl hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mb-2">Thank you for visiting my portfolio!</p>
+            <p class="text-sm">&copy; 2024 Harsha Vardhan Jonnalagadda. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript for mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const icon = navToggle.querySelector('i');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('flex')) {
+                    navLinks.classList.add('hidden');
+                    navLinks.classList.remove('flex');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+
+        // Contact Form Submission
+        const form = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    formStatus.textContent = "Message sent successfully!";
+                    formStatus.classList.add('text-accent');
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            formStatus.textContent = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            formStatus.textContent = "Oops! There was a problem submitting your form";
+                            formStatus.classList.add('text-red-500');
+                        }
+                    })
+                }
+            }).catch(error => {
+                formStatus.textContent = "Oops! There was a problem submitting your form";
+                formStatus.classList.add('text-red-500');
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+</body>
+</html>
