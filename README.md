@@ -1,65 +1,67 @@
-# Harsha Vardhan Jonnalagadda – Full-Stack Developer & AI/ML Enthusiast
 
-Welcome to my portfolio! I'm currently in my 3rd year of B.Tech specializing in Artificial Intelligence & Machine Learning at VVIT (graduating 2027). I'm deeply passionate about crafting technological solutions that make a real-world impact.
 
----
+# 🌐 Harsha Vardhan Jonnalagadda – Full-Stack Developer & AI/ML Enthusiast
 
-## About Me
-I love to build — from full-stack apps to AI-driven tools. As an AI & ML Engineer and Full-Stack Developer, I combine innovation, curiosity, and a hands-on approach to create intelligent, user-centric solutions. Active in ACM, I stay connected with emerging tech and thrive on continuous learning.
-
----
-
-## Skills
-
-- **AI & Machine Learning** (TensorFlow, PyTorch)
-- **Deep Learning**, **NLP**, **Data Analytics**
-- **Full Stack Development** (HTML, CSS, JavaScript, React)
-- **DSA with Python**
-- **Cloud Platforms** (AWS, GCP, Azure)
-- **Certified**: BE10X AI Tools Specialist
+![Portfolio](https://harshavardhanj.netlify.app/assets/portfolio-preview.png)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://app.netlify.com/sites/harshavardhanj/deploys)
+[![GitHub followers](https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=Follow&style=social)](https://github.com/YOUR_GITHUB_USERNAME)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/harsha-vardhan-jonnalagadda/)
 
 ---
 
-## Projects
+## 📖 About Me
+I’m a **3rd-year B.Tech student** specializing in **Artificial Intelligence & Machine Learning** at VVIT (graduating 2027).  
+As a **Full-Stack Developer** and **AI & ML Engineer**, I’m passionate about building intelligent solutions that create real-world impact.
 
-### [EDUCAREER](Live Demo / GitHub)
-An educational platform offering personalized career paths, resource libraries, and more — built using React, HTML, and CSS.
-
-### Flappy Bird Game
-A Python/Pygame-based game with gravity mechanics, sound effects, and high-score tracking.
-
-### Intelligent Chatbot
-A conversational AI built with NLP and machine learning techniques, capable of context-aware dialogue and continuous learning.
+💡 **Core Beliefs**:  
+- Learn continuously  
+- Build with purpose  
+- Share knowledge freely  
 
 ---
 
-## Certifications & Achievements
+## 🛠 Skills
 
-- **Responsive Web Design** – freeCodeCamp  
-- **Google Cloud Generative AI** – 24 skill badges  
-- **Data Analytics & Visualization** – Accenture simulation  
-- **AWS Solutions Architecture** – via Forage  
-- **Recognitions**:  
-  - EDUCAREER Showcase: impacted 500+ students  
-  - 1st place in SKILL EDGE (ACM event)  
-  - Top 10% GPA in academics
+- **AI & Machine Learning** – TensorFlow, PyTorch, NLP  
+- **Full Stack Development** – HTML, CSS, JavaScript, React  
+- **Data Structures & Algorithms** – Python  
+- **Cloud Platforms** – AWS, GCP, Azure  
+- **Data Analytics** – Pandas, Matplotlib, SQL  
 
 ---
 
-## Education
+## 🚀 Projects
 
-**B.Tech in Computer Science (AI & ML)** – VVIT (Graduating: 2027)
+### 📌 [EDUCAREER](https://harshavardhanj.netlify.app/#projects)
+Career guidance platform with personalized paths & resources – built with **React, HTML, CSS**.
 
----
+### 🎮 Flappy Bird Game
+Python/Pygame clone of the classic Flappy Bird with gravity & scoring.
 
-## Contact
-
-- **Email**: jv.harshasai@gmail.com  
-- **Phone**: +91 9177818027  
-- **Location**: Martur, India
-
-Let's innovate together — feel free to connect!
+### 🤖 Intelligent Chatbot
+NLP & ML-powered chatbot capable of context-aware conversations.
 
 ---
 
-*(Optional)*: You can add sections like "How to Run Locally" or "Contribution Guidelines" if you'd like to turn this into a full project repository.
+## 📜 Certifications & Achievements
+
+- Responsive Web Design – freeCodeCamp  
+- Google Cloud Generative AI – 24 skill badges  
+- Data Analytics & Visualization – Accenture Simulation  
+- AWS Solutions Architecture – Forage Program  
+- 🏆 1st place – SKILL EDGE (ACM Event)  
+- 🎓 Top 10% GPA  
+
+---
+
+## 📚 Education
+**B.Tech in Computer Science (AI & ML)** – VVIT (Graduating 2027)
+
+---
+
+## 🖥 How to Run Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+
